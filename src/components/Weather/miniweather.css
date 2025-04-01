@@ -1,0 +1,39 @@
+.weather-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-overview {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: center;
+}
+
+.weather-detail {
+    display: flex;
+    align-items: last baseline;
+    justify-content: center;
+    text-align: justify;
+}
+
+.detail-icon {
+    width: 200px;
+    height: 200px;
+}
+
+.white-icon {
+    filter: brightness(0) invert(1); /* Makes icon white */
+}
+
+.temperature {
+    font-size: 4em;
+    font-weight: bold;
+}
+

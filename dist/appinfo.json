@@ -1,0 +1,13 @@
+{
+	"id": "com.achunt.smartmirror",
+	"version": "1.0.0",
+	"vendor": "My Company",
+	"type": "web",
+	"main": "index.html",
+	"title": "Smart Mirror",
+	"icon": "icon.png",
+	"requiredPermissions": [
+		"time.query",
+		"activity.operation"
+	]
+}

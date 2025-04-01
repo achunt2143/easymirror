@@ -1,0 +1,15 @@
+.main-panel {
+    height: 100vh; /* Full viewport height */
+    display: block;
+    justify-content: space-between;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusts to fit screen */
+}
+
+.grid-container > * {
+    display: block;
+    justify-content: space-between;
+}

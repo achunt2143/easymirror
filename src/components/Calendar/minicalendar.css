@@ -1,0 +1,28 @@
+.mini-calendar {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.mini-calendar {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.today {
+    text-decoration: underline;
+    background-color: #f938826e;
+}
+
+.mini-calendar th,
+.mini-calendar td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    width: 14.2%;  /* Ensure 7 columns fit */
+}
