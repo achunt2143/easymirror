@@ -1,26 +1,15 @@
-import kind from '@enact/core/kind';
+import React, {useState} from 'react';
+import AppKind from './AppKind';
 import ThemeDecorator from '@enact/sandstone/ThemeDecorator';
-import Panels from '@enact/sandstone/Panels';
 
-import MainPanel from '../views/MainPanel';
+const App = () => {
+    const [panelIndex, setPanelIndex] = useState(0);
 
-import css from './App.module.less';
+    const handleNavigate = ({index}) => setPanelIndex(index);
 
-const App = kind({
-	name: 'App',
+    return (
+        <AppKind index={panelIndex} onNavigate={handleNavigate} />
+    );
+};
 
-	styles: {
-		css,
-		className: 'app'
-	},
-
-	render: (props) => (
-		<div {...props}>
-			<Panels>
-				<MainPanel />
-			</Panels>
-		</div>
-	)
-});
-
-export default ThemeDecorator(App);
+export default App;

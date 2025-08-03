@@ -1,24 +1,31 @@
-/* global ENACT_PACK_ISOMORPHIC */
-import {createRoot, hydrateRoot} from 'react-dom/client';
+import React from 'react';
+import { createRoot, hydrateRoot } from 'react-dom/client';
 
 import App from './App';
+import ThemeDecorator from '@enact/sandstone/ThemeDecorator';
+import { ThemeProvider, useThemeState } from './reducers/ThemeContext';
 import reportWebVitals from './reportWebVitals';
 
-const appElement = (<App />);
+// Wrap App with ThemeDecorator once
+const DecoratedApp = ThemeDecorator(App);
 
-// In a browser environment, render instead of exporting
-if (typeof window !== 'undefined') {
-	if (ENACT_PACK_ISOMORPHIC) {
-		hydrateRoot(document.getElementById('root'), appElement);
-	} else {
-		createRoot(document.getElementById('root')).render(appElement);
-	}
-}
+const ThemedAppRoot = () => {
+  const {theme} = useThemeState();
 
-export default appElement;
+  return (
+    <DecoratedApp skin={theme} />
+  );
+};
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint.
-// Learn more: https://github.com/enactjs/cli/blob/master/docs/measuring-performance.md
+const Root = () => (
+  <ThemeProvider>
+    <ThemedAppRoot />
+  </ThemeProvider>
+);
+
+// Render to DOM
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<Root />);
+
 reportWebVitals();

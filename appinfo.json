@@ -1,10 +1,10 @@
 {
-    "id": "com.achunt.smartmirror",
+    "id": "com.achunt.easymirror",
     "version": "1.0.0",
     "vendor": "My Company",
     "type": "web",
     "main": "index.html",
-    "title": "Smart Mirror",
+    "title": "Easy Mirror",
     "icon": "icon.png",
     "requiredPermissions": [
         "time.query",

@@ -1,23 +1,17 @@
-import Button from '@enact/sandstone/Button';
+// src/views/MainPanel.js
 import kind from '@enact/core/kind';
-import {Panel, Header} from '@enact/sandstone/Panels';
-import Calendar from '../components/Calendar/Calendar';
-import MiniCalendar from '../components/Calendar/MiniCalendar';
-import MiniWeather from '../components/Weather/MiniWeather';
-import './mainpanel.css';
+import {Panel} from '@enact/sandstone/Panels';
+import BodyText from '@enact/sandstone/BodyText';
+import BottomNavBar from '../components/BottomNavBar/BottomNavBar';
 
 const MainPanel = kind({
-	name: 'MainPanel',
-
-	render: (props) => (
-		<Panel {...props} className="main-panel">
-			<div className="grid-container">
-				<MiniWeather />
-				<MiniCalendar />
-				{/* Add more components here if needed */}
-			</div>
-		</Panel>
-	)
+  name: 'MainPanel',
+  render: ({onNext, ...rest}) => (
+    <Panel {...rest} title="Main Panel">
+      <BodyText>This is the first panel.</BodyText>
+      <BottomNavBar onNext={onNext} />
+    </Panel>
+  )
 });
 
 export default MainPanel;

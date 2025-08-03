@@ -1,5 +1,5 @@
 {
-	"name": "smartmirror",
+	"name": "easymirror",
 	"version": "1.0.0",
 	"description": "A general template for an Enact Sandstone application.",
 	"author": "",
@@ -30,19 +30,19 @@
 		"dist/*"
 	],
 	"dependencies": {
-		"@enact/core": "^4.9.0",
-		"@enact/i18n": "^4.9.0",
-		"@enact/sandstone": "^2.9.0",
-		"@enact/spotlight": "^4.7.8",
-		"@enact/ui": "^4.9.0",
-		"@enact/webos": "^4.9.0",
+		"@enact/core": "^4.8.0",
+		"@enact/i18n": "^4.8.0",
+		"@enact/sandstone": "^2.9.13",
+		"@enact/spotlight": "^4.8.0",
+		"@enact/ui": "^4.8.0",
+		"@enact/webos": "^4.9.8",
 		"ilib": "^14.19.0",
-		"moment": "^2.30.1",
-		"openmeteo": "1.1.4",
 		"prop-types": "^15.8.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
-		"web-vitals": "^3.5.0"
+		"web-vitals": "^3.5.1",
+		"moment": "^2.30.1",
+		"openmeteo": "^1.2.0"
 	},
 	"devDependencies": {
 		"eslint-config-enact-proxy": "^1.0.7"
