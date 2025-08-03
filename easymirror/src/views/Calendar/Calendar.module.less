@@ -1,0 +1,137 @@
+.calendarKind {
+    background-color: black !important;
+    background: black;
+}
+
+.calendarPanel {
+    background-color: black;
+    background: black;
+}
+
+.calendarContainer {
+    border: 0.08333rem solid skyblue;
+    margin: 2%;
+    background: black;
+    transform: translateX(0%) !important;
+    z-index: 2 !important;
+    position: relative;          // Ensures proper stacking/context
+}
+.calendarTable {
+    // background-color: white;
+    // color: #00000091;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+.calendarHeader {
+    border-bottom: 1px dashed #f93881;
+    font-size: 1.6em;
+    background: #383838;
+}
+.calendarHeaderTd {
+    border-spacing: 0;
+    padding-left: 5px;
+}
+.day {
+    border: 1px solid #f93881;
+    font-size: 0.8em;
+    cursor: pointer;
+    width: 14%;
+    height: 40px;
+    line-height: 24px;
+    text-align: center;
+    padding: 5px;
+}
+.emptySlot {
+    padding: 5px;
+    text-align: center;
+    height: 40px;
+}
+.dayText {
+    top: 5px;
+    right: 5px;
+}
+.weekDay {
+    font-size: 0.8em;
+    padding: 5px;
+    text-align: center;
+    height: 40px;
+}
+.currentDay {
+    background-color: #f93881;
+    border-radius: 2%;
+    color: white;
+}
+.selectedDay {
+    background-color: yellow;
+    border-radius: 2%;
+    color: black;
+}
+.monthPopup {
+    position: absolute;
+    padding: 5px;
+    background: white;
+    border: 2px solid #f93881;
+}
+.monthPopupDiv {
+    padding: 0.3em;
+}
+.weekDayNav {
+    height: 70px;
+    background: #f93881;
+    color: #fff;
+}
+.datesRow {
+    height: 130px;
+    width: 100%;
+}
+.editorYear {
+    max-width: 3.6em;
+}
+.labelMonth {
+    font-size: 0.6em;
+    cursor: pointer;
+}
+.labelYear {
+    font-size: 0.6em;
+}
+.eventElement {
+    background: #f93881;
+    font-size: 18px;
+    height: 20px;
+    width: 250px;
+    color: #fff;
+    padding: 0px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 2px;
+}
+.currentDayEventElement {
+    background: #ffffff;
+    color: #f93881;
+}
+.moreEventElement {
+    background: #383838 !important;
+    font-size: 18px;
+    height: 20px;
+    width: 100%;
+    color: #fff;
+    margin: 0!important;
+    padding: 0!important;
+}
+.createNewBtn {
+    right: 50px;
+    position: absolute;
+    margin-top: 5px;
+    bottom: 15px;
+}
+.dialogPopup {
+    height: 80%;
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+}
+.scrollbar {
+    /* ... */
+}
